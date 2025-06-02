@@ -5,54 +5,22 @@
         <meta charset="utf-8">
         <meta content="Sang-cheol Choi's website" name="title">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-        <script src="./sliding-tabs-css-transitions-only/dist/index.html"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
         <link ref="stylesheet" href="./sliding-tabs-css-transitions-only/dist/style.css">
     </head>
     <body>
-        <div class="navbar navbar-expand-lg fixed-top navbar-light bg-light">
-            <div class="container">
-                <a class="navbar-brand" ref="stylesheet">Sang-cheol Choi</a>
-                <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" 
-                class="navbar-toggler collapsed" data-target="#navbarResponsive" data-toggle="collapse" type="button">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div id="navbarResponsive" class="navbar-collapse collapse">
-                <ul class="nav navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#home" target-menu="menu_home">HOME</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery" target-menu="menu_gallery">GALLERY</a>
-                    </li>
-                </ul>
-            </div>
-            </div>
-            <!--end of container-->
-        </div>
-        <!--end of navbar-->
-        <div class="container">
-            <div class="home_doc">
-                <div id="menu_home" class="menu_template">
-                    <div class="row">
-                        <div class="profile_image">
-                            <img src="https://drive.google.com/thumbnail?id=1WtNckL5wsVt2DdDXJ2-posbpHxfzHnHE">
-                        </div>
-                        <div class="self-introduction">
-                            <h6>자기소개</h6>
-                            <p>강원대학교에 다니는 최상철입니다.</p>
-                            <br>
-                            <div class="home_labels" style="margin-top:20px">
-                                <a class="home_label" href="mailto:chel11@naver.com" target="_blank">chel11@naver.com</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="footer">
-            <p class="bottom">
-            </p>
-        </footer>
+    <!-- partial:index.partial.html -->
+    <div class="container">
+	    <div class="tabs">
+		    <input type="radio" id="radio-1" name="tabs" checked />
+		    <label class="tab" for="radio-1">Upcoming<span class="notification">2</span></label>
+		    <input type="radio" id="radio-2" name="tabs" />
+		    <label class="tab" for="radio-2">Development</label>
+		    <input type="radio" id="radio-3" name="tabs" />
+		    <label class="tab" for="radio-3">Completed</label>
+		    <span class="glider"></span>
+	    </div>
+    </div>
+    <!-- partial -->
     </body>
 </html>
